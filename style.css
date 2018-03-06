@@ -1,0 +1,116 @@
+html, body {
+  background: #000;
+  height: auto;
+  width: 100%;
+}
+
+body {
+  padding-bottom: 45px;
+  position: relative;
+}
+
+img {
+  margin: 0 auto;
+  margin-bottom: 30px;
+  display: block;
+  height: 100px;
+}
+
+.wrapper {
+  margin-top: 40px;
+  padding: 30px;
+  color: #000;
+  margin: 0 auto;
+  background-color: #fff;
+  width: 80%;
+  max-width: 1300px;
+  border-color: 1px solid white;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.wrapper h1, .wrapper h2 {
+  margin-top: 0;
+  color: #f9da06;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.wrapper .schedule table {
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.wrapper .schedule table th {
+  background-color: #f9da06;
+  padding: 5px;
+}
+.wrapper .schedule table tr {
+  padding: 5px;
+  border: 1px solid #000;
+  height: 29px;
+}
+.wrapper .schedule table tr:nth-child(even) {
+  background: #fff;
+}
+.wrapper .schedule table tr:nth-child(odd) {
+  background: #c2c2c2;
+}
+.wrapper .schedule table tr td input {
+  background: transparent;
+  border: 0;
+  width: 150px;
+  text-align: center;
+}
+.wrapper .schedule table tr td input:focus {
+  outline: 0;
+}
+.wrapper .btn1 {
+  background-color: #f9da06;
+  padding: 5px 15px;
+  border: 1px solid #000;
+  color: #000;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.wrapper .btn1:hover {
+  background-color: #fbe551;
+}
+.wrapper .btn2 {
+  background-color: #000;
+  padding: 5px 15px;
+  border: 1px solid #000;
+  color: #f9da06;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.wrapper .btn2:hover {
+  background-color: #262626;
+}
+.wrapper .two-columns {
+  width: 49%;
+  display: inline-block;
+  vertical-align: top;
+}
+.wrapper .two-columns #generated-schedule, .wrapper .two-columns #generated-report {
+  margin-top: 30px;
+}
+
+footer {
+  text-align: center;
+  font-size: smaller;
+  color: #f9da06;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+footer p {
+  margin: 0;
+}
+footer img {
+  height: 10px;
+  display: inline-block;
+  margin: 0;
+}

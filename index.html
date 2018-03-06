@@ -1,0 +1,62 @@
+<!-- Notes to improve: -->
+<!--
+  1. Remove time from 12:00PM - 12:30PM
+  2. Report generator -- DONE
+  3. Schedule updates - get the html of the table and export. Upload .txt to get the table again
+  4. Local storage c/o Alec
+  5. Add initial count of rows to 5 and then remove from generated schedule and report the rows that do not have data
+  6. Github repo for version control
+  7. Slack bot (?)
+  8. End = Start of next row for every change -- DONE
+-->
+
+<img src="https://www.usource.me/wp-admin/images/x5.png" alt="">
+<div class="wrapper">
+
+  <h1><i class="far fa-calendar-alt"></i> Schedule and Report Generator <i class="far fa-edit"></i></h1>
+  <button class="btn1" onclick="app.addRow()">Add Row</button>    <button class="btn2" onclick="app.reset()">Reset</button>
+  <div class="schedule">
+    <table class="schedule--table">
+      <tr>
+        <th>#</th>
+        <th>Start</th>
+        <th>End</th>
+        <th>Client Name</th>
+        <th>Task</th>
+        <th>Tracker</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td><input class="timepicker start" id="start1"></td>
+        <td><input class="timepicker end" id="end1"></td>
+        <td><input id="client1" type="text"></td>
+        <td><input id="task1" type="text"></td>
+        <td><input id="tracker1" type="text"></td>
+      </tr>
+    </table>
+  </div>
+  <button class="btn1" onclick="app.generateSchedule(); app.generateReport();">Generate</button>
+</div>
+
+<div class="wrapper">
+  <div class="two-columns">
+    <h2><i class="far fa-calendar-alt"></i> Schedule <i class="far fa-calendar-alt"></i> </h2>
+    <button class="btn1" onclick="app.copy('schedule')">Copy to Clipboard</button>
+    <div id="generated-schedule">
+
+    </div>
+  </div>
+  <div class="two-columns">
+    <h2><i class="far fa-edit"></i> Report <i class="far fa-edit"></i></h2>
+    <button class="btn1" onclick="app.copy('report')">Copy to Clipboard</button>
+    <div id="generated-report">
+
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p style="color: #f9da06">USource Scheduler </p>
+  <p>by Paul Andree M. Vergara</p>
+  <p>with <img draggable="false" src="https://s.w.org/images/core/emoji/2.3/svg/2764.svg"></p>
+</footer>
